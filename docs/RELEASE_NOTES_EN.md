@@ -8,19 +8,19 @@ Version 1.0.0 · Single-player / offline · UE4SS Lua
 
 ## Overview
 
-Missiles are the signature weapon of the Ace Combat series, but their kinematic envelope
-has always been far shorter than anything a modern fighter crew would recognise. The result is
-a constant complaint from players — and it is felt most sharply in a HOTAS cockpit, where the
-short lock-on range, narrow seeker limits and sluggish turn rate make the missile feel like a
-short-range firework rather than a guided weapon.
+Missiles are one of the signature features of the Ace Combat series. The series has always tuned
+them for arcade pacing — short acquisition ranges, capable but tightly bounded seekers, generous
+magazines — and that tuning is a deliberate design choice that works well in the third-person
+view and at the pace the missions are built around.
 
-Modern Missile Mod rebuilds the player's missile catalogue around modern air-combat practice:
-longer acquisition ranges, realistic seeker gimbal limits, proportional-navigation lead, higher
-turn rates, warheads that actually matter, and magazine capacities that let a sortie fight with
-missiles instead of conserving them.
+Modern Missile Mod offers an alternative tuning for cockpit flying, especially with a HOTAS: it
+brings the missile envelope closer to modern air-combat practice without changing the arcade
+flow of a mission. The vanilla balance is not replaced or corrected — this is simply a second
+option for a different way of playing.
 
-It was designed first for HOTAS cockpit flying, but it works equally well on a keyboard or pad —
-the numbers are simply more generous than the vanilla balance.
+The design goals are longer acquisition ranges, realistic seeker gimbal limits,
+proportional-navigation lead, higher turn rates, warheads that matter against large targets, and
+magazines that let a sortie fight with missiles instead of conserving them.
 
 ## Design intent
 
@@ -76,7 +76,7 @@ gimbal limit after launch. Vanilla values in brackets.
 | QAAM | PL-10 | 2.4 → **5.0** | 120° → **160°** | 120° → **160°** | 75 → **110 °/s** | 0.40 → **0.95** | ×2 | ×2.5 |
 | SASM | Python-5 | 2.4 → **8.0** | native (45°) | 75° → **100°** | 40 → **80 °/s** | 0 → **0.60** | ×2 | ×2.5 |
 | 4AAM | AIM-120D | 4.0 → **10.0** | native | 65° → **90°** | 45 → **65 °/s** | 0 → **0.50** | ×2 | ×2.5 |
-| 6AAM | AIM-120D ×6 | 5.0 → **10.0** | native | 67.5° → **90°** | 45 → **65 °/s** | 0 → **0.50** | ×2 | ×2.5 |
+| 6AAM | AIM-120D | 5.0 → **10.0** | native | 67.5° → **90°** | 45 → **65 °/s** | 0 → **0.50** | ×2 | ×2.5 |
 | HCAA | MBDA Meteor | 2.2 → **10.0** | native | 75° → **90°** | 50 → **65 °/s** | 0 → **0.50** | ×2 | ×2.5 |
 | SAAM | AIM-7P | 6.0 → **12.0** | native | 150° → **180°** | 150 → **180 °/s** | 0.10 → **0.30** | ×2 | ×2.5 |
 | HPAA | PL-12 | 3.75 → **12.0** | native | 65° → **90°** | 45 → **65 °/s** | 0 → **0.50** | ×2 | ×2.5 |
@@ -91,8 +91,8 @@ character. SAAM keeps its native blast radius.
 | Store | Analogue | Lock-on range | Capacity | Damage | Blast | Speed |
 | --- | --- | --- | --- | --- | --- | --- |
 | 4AGM | AGM-65 | 3.0 → **10.0** | ×3 | ×1 | native | native |
-| 6AGM | AGM-65 ×6 | 3.5 → **10.0** | ×3 | ×1 | native | native |
-| 8AGM | AGM-65 ×8 | 4.0 → **10.0** | ×3 | ×1 | native | native |
+| 6AGM | AGM-65 | 3.5 → **10.0** | ×3 | ×1 | native | native |
+| 8AGM | AGM-65 | 4.0 → **10.0** | ×3 | ×1 | native | native |
 | LASM | AGM-84 | 6.0 → **100.0** | ×2 | ×5 | native | **×2** |
 | LAGM | AKF-98A | 6.0 → **100.0** | ×2 | ×3 | native | **×1.5** |
 | LACM | AGM-158B | 10.0 → **150.0** | ×2 | ×3 | 145 → **290 m** | native |
@@ -148,6 +148,7 @@ Uninstalling is a folder delete — nothing is written to the save file.
 
 ## Credits and licence
 
-Developed with AI assistance (DeepSeek V4.1 Flash), with human testing and review.
+Developed with AI assistance (the "Big Fat Fish" model, DeepSeek V4.1 Flash), with human
+testing and review.
 
 MIT licence — use, modify and redistribute freely. See `LICENSE`.
