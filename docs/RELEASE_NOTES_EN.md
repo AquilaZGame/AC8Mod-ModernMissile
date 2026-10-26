@@ -148,7 +148,7 @@ Uninstalling is a folder delete — nothing is written to the save file.
 
 ## Credits and licence
 
-Developed with AI assistance (the "Big Fat Fish" model, DeepSeek V4.1 Flash), with human
+Developed with AI assistance (the "Big fat blue whale" model, DeepSeek V4.1 Flash), with human
 testing and review.
 
 MIT licence — use, modify and redistribute freely. See `LICENSE`.
