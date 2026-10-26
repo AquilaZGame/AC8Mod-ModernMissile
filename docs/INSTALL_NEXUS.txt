@@ -1,0 +1,53 @@
+Modern Missile Mod 1.0.0 - ACE COMBAT 8: Wings of Theve
+========================================================
+
+EN  This package contains the mod only. UE4SS and a no-EAC offline launcher are
+    prerequisites and are not bundled.
+ZH  本发布包仅包含 Mod 本体。UE4SS 与无 EAC 离线启动器属于前置要求，不随包提供。
+
+REQUIREMENTS / 前置要求
+-----------------------
+- ACE COMBAT 8 (Steam), single-player / offline
+- UE4SS 3.0.1 or newer, installed in Game\Binaries\Win64\
+- A no-EAC offline launcher
+
+INSTALL / 安装
+--------------
+Extract this archive into:
+    ACE COMBAT 8\Game\Binaries\Win64\
+将本压缩包解压到：
+    ACE COMBAT 8\Game\Binaries\Win64\
+
+Result / 解压后应得到：
+    ue4ss\Mods\ModernMissileMod\enabled.txt
+    ue4ss\Mods\ModernMissileMod\Scripts\main.lua
+    ue4ss\Mods\ModernMissileMod\Scripts\config.lua
+
+Start the game offline and load a mission. / 以离线模式启动游戏并进入任务。
+
+IN GAME / 游戏内
+----------------
+- Cycle the weapon once after entering a mission to refresh the HUD lock ring.
+  进入任务后切换一次武器，刷新 HUD 锁定圈。
+- Values are re-applied at the start of every sortie; the mod is idle afterwards.
+  每次出击开始时重新写入，之后完全空闲。
+
+SETTINGS / 设置
+---------------
+All values live in Scripts\config.lua. Restart the game after editing.
+全部数值位于 Scripts\config.lua，修改后重启游戏。
+
+LOG / 日志
+----------
+ue4ss\Mods\ModernMissileMod\ModernMissileMod.log
+
+UNINSTALL / 卸载
+----------------
+Delete the folder ue4ss\Mods\ModernMissileMod and restart the game.
+删除 ue4ss\Mods\ModernMissileMod 文件夹并重启游戏。
+
+Nothing is written to the save file. / 不写入存档。
+
+LICENCE / 授权
+--------------
+MIT. See the project page for the full text and credits.

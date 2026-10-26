@@ -43,7 +43,7 @@ magazine multipliers, one block per store. Restart the game after editing.
 ```
 src/ModernMissileMod/   the mod itself (the only thing users install)
 tools/deploy.sh         copy the mod into a local game installation
-tools/package.sh        build a release zip for Nexus / GitHub Releases
+tools/package.sh        build both release archives (GitHub + Nexus)
 docs/                   release notes and technical notes
 local/                  internal documents (requirements, drafts) — not tracked by git
 ```
@@ -59,6 +59,19 @@ AC8_DIR="/c/Games/ACE COMBAT 8" tools/deploy.sh
 
 The mod writes `ModernMissileMod.log` next to its folder. Every weapon the patcher touches logs its
 vanilla values and the applied deltas; `FAILED:` lines mean a write did not survive readback.
+
+## Release packaging
+
+```bash
+tools/package.sh
+```
+
+produces two archives in `dist/`:
+
+- `ModernMissileMod-<version>.zip` — GitHub Release: the mod folder plus README, LICENSE,
+  CHANGELOG and `docs/`.
+- `ModernMissileMod-<version>-Nexus.zip` — NexusMods: the mod folder plus `INSTALL.txt`, nothing
+  else. UE4SS and the no-EAC launcher are prerequisites and are never bundled.
 
 ## Licence
 
