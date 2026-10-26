@@ -1,0 +1,15 @@
+# internal documents, local only
+local/
+
+# build output
+dist/
+*.zip
+*.7z
+
+# runtime logs
+*.log
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
